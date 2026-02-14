@@ -1,0 +1,17 @@
+{
+  "name": "betting-app",
+  "version": "1.0.0",
+  "description": "Sports Betting App with React & Express",
+  "scripts": {
+    "start": "concurrently \"npm run start --prefix client\" \"npm run start --prefix betting-server\"",
+    "build": "concurrently \"npm run start --prefix client\" \"npm run build --prefix betting-server\"",
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix betting-server\"",
+    "install": "concurrently \"npm install --prefix client\" \"npm install --prefix betting-server\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0"
+  }
+}
